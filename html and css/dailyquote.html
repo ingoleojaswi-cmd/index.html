@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daily Quote - Ignite</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background:#f5f5dc;
+    min-height:100vh;
+    padding-top:100px;
+}
+
+
+
+/* NAVBAR */
+
+header{
+
+    background:white;
+    width:100%;
+    height:80px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+
+    padding:0 80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    z-index:1000;
+
+}
+
+
+
+.logo{
+
+    font-size:32px;
+    font-weight:bold;
+    color:#ff7a00;
+
+}
+
+
+
+nav a{
+
+    text-decoration:none;
+    color:#555;
+
+    margin-left:30px;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    color:#ff7a00;
+
+}
+
+
+
+
+
+
+
+/* QUOTE BOX */
+
+
+.quote-container{
+
+    width:80%;
+    max-width:600px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:50px 30px;
+
+    text-align:center;
+
+    margin:40px auto;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+
+.title{
+
+    font-size:36px;
+    color:#ff6b35;
+
+}
+
+
+
+.date{
+
+    color:#777;
+    margin:15px;
+
+}
+
+
+
+.quote{
+
+    font-size:30px;
+    font-style:italic;
+
+    color:#333;
+
+    line-height:1.5;
+
+    margin:30px 0;
+
+}
+
+
+
+.author{
+
+    font-size:20px;
+    color:#666;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.reflection{
+
+    background:#f8f8f8;
+
+    padding:20px;
+
+    border-radius:12px;
+
+}
+
+
+
+.reflection h3{
+
+    margin-bottom:10px;
+
+}
+
+
+
+.reflection p{
+
+    color:#666;
+
+    line-height:1.5;
+
+}
+
+
+
+
+.buttons{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+
+
+button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+}
+
+
+
+#newBtn{
+
+background:#ff6b35;
+color:white;
+
+}
+
+
+
+#likeBtn{
+
+background:#e91e63;
+color:white;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+🔥 Ignite
+</div>
+
+
+
+<nav>
+
+<a href="soul.html">Home</a>
+
+<a href="dailyquote.html">Daily Quote</a>
+
+<a href="categories.html">Categories</a>
+
+<a href="about.html">About</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<div class="quote-container">
+
+
+<h1 class="title">
+✨ Daily Quote ✨
+</h1>
+
+
+
+<p class="date" id="todayDate"></p>
+
+
+
+<div class="quote" id="quote">
+
+"The future depends on what you do today."
+
+</div>
+
+
+
+<div class="author" id="author">
+
+— Mahatma Gandhi
+
+</div>
+
+
+
+
+
+<div class="reflection">
+
+
+<h3>
+💡 Today's Reflection
+</h3>
+
+
+<p id="reflection">
+
+Every small action you take today helps create the future you dream about.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="buttons">
+
+
+<button id="newBtn" onclick="newQuote()">
+
+🔄 New Quote
+
+</button>
+
+
+
+<button id="likeBtn" onclick="likeQuote()">
+
+❤️ Like
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<script>
+
+
+document.getElementById("todayDate").innerHTML =
+new Date().toDateString();
+
+
+
+
+const quotes=[
+
+{
+quote:"The future depends on what you do today.",
+author:"Mahatma Gandhi",
+reflection:"Every small action you take today helps create the future you dream about."
+},
+
+
+{
+quote:"Believe you can and you're halfway there.",
+author:"Theodore Roosevelt",
+reflection:"Confidence begins with believing in yourself."
+},
+
+
+{
+quote:"Dream big. Start small. But most of all, start.",
+author:"Simon Sinek",
+reflection:"Taking the first step changes everything."
+}
+
+
+];
+
+
+
+let likes=0;
+
+
+
+function newQuote(){
+
+
+let random =
+Math.floor(Math.random()*quotes.length);
+
+
+
+document.getElementById("quote").innerHTML =
+`"${quotes[random].quote}"`;
+
+
+document.getElementById("author").innerHTML =
+"— "+quotes[random].author;
+
+
+document.getElementById("reflection").innerHTML =
+quotes[random].reflection;
+
+
+
+}
+
+
+
+
+
+function likeQuote(){
+
+
+likes++;
+
+
+document.getElementById("likeBtn").innerHTML =
+"❤️ Liked ("+likes+")";
+
+
+}
+
+
+</script>
+
+
+
+</body>
+</html>

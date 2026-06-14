@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motivation Categories</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f5dc;
+}
+
+
+#categories{
+    padding:60px 10%;
+    text-align:center;
+}
+
+#categories h1{
+    color:#333;
+    margin-bottom:10px;
+}
+
+#categories p{
+    color:#666;
+    margin-bottom:40px;
+}
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.category-card{
+    background:white;
+    padding:30px 20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.category-card:hover{
+    transform:translateY(-5px);
+    background:#ff7a00;
+}
+
+.category-card:hover a{
+    color:white;
+}
+
+.category-card a{
+    text-decoration:none;
+    color:#333;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.quote-section{
+    max-width:900px;
+    margin:40px auto;
+    padding:30px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.quote-section h2{
+    color:#ff7a00;
+    margin-bottom:15px;
+}
+
+.quote{
+    font-size:22px;
+    font-style:italic;
+    margin:15px 0;
+    color:#401e1e;
+}
+
+.author{
+    color:#483232;
+    margin-bottom:20px;
+}
+nav a:hover{
+    color:#ff7a00;
+}
+nav a{
+    text-decoration:none;
+    color:#555;
+    margin-left:25px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+header{
+    background:whitesmoke;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#ff7a00;
+}
+
+</style>
+
+</head>
+<body>
+<header>
+    <div class="logo">🔥 Ignite</div>
+    <nav>
+        <a href="soul.html">Home</a>
+        <a href="dailyquote.html">Daily Quote</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<section id="categories">
+    <h1><b>Explore Categories</b></h1>
+    <p>Choose a category to discover inspiring thoughts.</p>
+
+    <div class="category-container">
+        <div class="category-card"><a href="#success">🌟 Success</a></div>
+        <div class="category-card"><a href="#hardwork">💪 Hard Work</a></div>
+        <div class="category-card"><a href="#dreams">🚀 Dreams</a></div>
+        <div class="category-card"><a href="#life">❤️ Life</a></div>
+        <div class="category-card"><a href="#happiness">😊 Happiness</a></div>
+        <div class="category-card"><a href="#confidence">🔥 Confidence</a></div>
+        <div class="category-card"><a href="#growth">🌱 Personal Growth</a></div>
+        
+    </div>
+</section>
+
+
+<section id="success" class="quote-section">
+    <h2><b>🌟 Success Quotes</b></h2>
+    <div class="quote">"Success is the sum of small efforts, repeated day in and day out."</div>
+    <div class="author">— Robert Collier</div>
+    <div class="quote">"Strive not to be a success, but rather to be of value." </div>
+    <div class="author">— Albert Einstein</div>
+    <div class="quote">"Success is the result of perfection, hard work, learning from failure, loyalty, and persistence." </div>
+    <div class="author">— Colin Powell</div>
+    <div class="quote">"I attribute my success to this: I never gave or took any excuse." </div>
+    <div class="author">— Florence Nightingale</div>
+    <div class="quote">"The secret of success is to do the common thing uncommonly well."</div>
+    <div class="author"> — John D. Rockefeller</div>
+</section>
+
+
+<section id="hardwork" class="quote-section">
+    <h2><b>💪 Hard Work Quotes</b></h2>
+    <div class="quote">"There are no shortcuts to any place worth going."</div>
+    <div class="author">— Beverly Sills</div>
+    <div class="quote">"Hard work beats talent when talent fails to work hard."</div>
+        <div class="author"> — Tim Notke</div>
+<div class="quote">"Opportunities are usually disguised as hard work, so most people don't recognize them."</div>
+    <div class="author"> — Ann Landers</div>
+    <div class="quote">"There are no secrets to success. It is the result of preparation, hard work, and learning from failure." </div>
+        <div class="author"> — Colin Powell</div>
+<div class="quote">"I'm a great believer in luck, and I find the harder I work the more I have of it."</div>
+    <div class="author">Thomas Jefferson</div>
+</section>
+
+
+<section id="dreams" class="quote-section">
+    <h2><b>🚀 Dreams & Goals</b></h2>
+    <div class="quote">"Dream big. Start small. But most of all, start."</div>
+    <div class="author">— Simon Sinek</div>
+    <div class="quote">"A dream doesn't become reality through magic; it takes sweat, determination and hard work." </div>
+    <div class="author"> — Colin Powell</div>
+    <div class="quote">If you want to live a happy life, tie it to a goal, not to people or things."</div>
+    <div class="author">— Albert Einstein</div>
+    <div class="quote">The future belongs to those who believe in the beauty of their dreams."</div>
+    <div class="author">-Eleanor Roosevelt</div>
+    <div class="quote">"A goal without a plan is just a wish." </div>
+    <div class="author">— Antoine de Saint-Exupéry</div>
+</section>
+
+
+<section id="life" class="quote-section">
+    <h2><b>❤️ Life Quotes</b></h2>
+    <div class="quote">"Life is what happens when you're busy making other plans."</div>
+    <div class="author">— John Lennon</div>
+    <div class="quote">"In the end, it's not the years in your life that count. It's the life in your years."</div>
+    <div class="author">Abraham Lincoln</div>
+    <div class="quote">"Life is what happens when you're busy making other plans."</div>
+    <div class="author"— John Lennon></div>
+    <div class="quote">""The purpose of our lives is to be happy."</div>
+    <div class="author">— Dalai Lama</div>
+    <div class="quote">""Life is really simple, but we insist on making it complicated." </div>
+    <div class="author"> — Confucius</div>
+</section>
+
+<!-- Happiness -->
+<section id="happiness" class="quote-section">
+    <h2><b>😊 Happiness Quotes</b></h2>
+    <div class="quote">"Happiness depends upon ourselves."</div>
+    <div class="author">— Aristotle</div>
+    <div class="quote">"Happiness is not something ready made. It comes from your own actions." </div>
+    <div class="author">— Dalai Lama</div>
+    <div class="quote">"The most important thing is to enjoy your life—to be happy—it's all that matters." </div>
+    <div class="author"> — Audrey Hepburn</div>
+    <div class="quote">"Happiness depends upon ourselves." </div>
+    <div class="author">— Aristotle</div>
+    <div class="quote">"For every minute you are angry you lose sixty seconds of happiness." </div>
+    <div class="author"> — Ralph Waldo</div>
+</section>
+
+<section id="confidence" class="quote-section">
+    <h2><b>🔥 Self-Confidence</b></h2>
+    <div class="quote">"Believe you can and you're halfway there."</div>
+    <div class="author">— Theodore Roosevelt</div>
+     <div class="quote">"With confidence, you have won before you have started." </div>
+     <div class="author">— Marcus Garvey</div>
+      <div class="quote">"Confidence is contagious. So is a lack of confidence." </div>
+      <div class="author">—Vince Lombardi</div>
+       <div class="quote">"Because one believes in oneself, one doesn't try to convince others." </div>
+       <div class="author">—Lao Tzu</div>
+        <div class="quote">"Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence."</div>
+        <div class="author">— Helen Keller</div>
+</section>
+
+
+<section id="growth" class="quote-section">
+    <h2><b>🌱 Personal Growth</b></h2>
+    <div class="quote">"Be not afraid of growing slowly, be afraid only of standing still."</div>
+    <div class="author">— Chinese Proverb</div>
+    <div class="quote">"The heavy price of transformation is leaving behind the people and minds that are comfortable with your old self."</div>
+    <div class="author">—  Carl Jung</div>
+    <div class="quote">"You must be willing to burn in your own flame; how could you rise anew if you have not first become ashes?" </div>
+    <div class="author">—Friedrich Nietzsche </div>
+    <div class="quote">"The tragic paradox of growth is that your cocoon must shatter completely before your wings can ever exist." </div>
+    <div class="author">—Kahlil Gibran </div>
+    <div class="quote">"Man cannot remake himself without suffering, for he is both the marble and the sculptor."</div>
+    <div class="author">—  Alexis Carrel</div>
+</section>
+
+
+</body>
+</html>
